@@ -34,7 +34,8 @@ const FacebookLogins = ({ message }) => {
     //   icon="fa-facebook" />
     <FacebookLogin
       // appId='879751916309957'
-      appId='355133229350374'
+      appId='203178948488528'
+      clientSecret='4f6da209cf5bb046007f38b42981617e'
       // fields='name,email,picture'
       cssClass='btnFacebook'
       render={(renderProps) => (

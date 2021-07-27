@@ -6,7 +6,7 @@ import PrivateRoute from "./Components/PrivateRouting";
 import AdminRoute from "./Components/PrivateRouting/AdminRoute";
 import Userpanel from "./Components/userPanel/Userpanel";
 import LoadingComponent from "./Loading Animation/Loading";
-
+import Inovice from "./Components/userPanel/userPanelMenus/Inovice";
 import MessengerCustomerChat from "react-messenger-customer-chat";
 
 const App = () => {
@@ -16,11 +16,7 @@ const App = () => {
 
   return (
     <BrowserRouter>
-      <MessengerCustomerChat
-        pageId="101621921567417"
-        appId="932788690836898"
-       
-      />
+      <MessengerCustomerChat pageId="101621921567417" appId="932788690836898" />
       <Suspense fallback={<LoadingComponent />}>
         <Route exact path="/login" component={Login} />
         <Route exact path="/" component={HomePage} />
@@ -28,6 +24,11 @@ const App = () => {
         <AdminRoute exact path="/adminpanel" component={AdminPanel} />
         <PrivateRoute exact path="/checkout" component={Checkout} />
         <PrivateRoute exact path="/userdashboard" component={Userpanel} />
+        <PrivateRoute
+          exact
+          path="/userdashboard/invoice"
+          component={Inovice}
+        />{" "}
       </Suspense>
     </BrowserRouter>
   );

@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useContext, useEffect } from 'react'
 import { bookingContext } from '../../../context/BookingsContext/bookingContext';
-
+console.log(bookingContext)
 const AdminProfileList = () => {
 
     const bookingcontext = useContext(bookingContext)

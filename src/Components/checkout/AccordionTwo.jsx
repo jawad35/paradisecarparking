@@ -178,7 +178,7 @@ const AccordionTwo = ({ checkoutPageTwo }) => {
             <br />
             <br /> */}
 
-            <div className='row mt-4'>
+            <div className='mt-4 row'>
                 {/* end col */}
                 <div className='col-sm-12 '>
                     <div className='text-sm-end'>

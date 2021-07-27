@@ -5,7 +5,8 @@ import {contextData} from '../../context/CreateContext'
 const AccordionOne = ({ checkoutPageTwo }) => {
     const { addToast } = useToasts()
     const context = useContext(contextData)
-    let user_email =context.user.user
+    console.log(context)
+    let user_email =context.user.email
     console.log(user_email)
     const [formData, setFormData] = useState({
         firstName: '',
@@ -33,7 +34,15 @@ const AccordionOne = ({ checkoutPageTwo }) => {
             //         addToast(msgs.msg, { appearance: 'info', autoDismiss: true });
             //     });
             // }
-            checkoutPageTwo()
+            try {
+                const res=await axios.post(`/api/formdata`,formData)
+                console.log(res)
+                checkoutPageTwo()
+            } catch (error) {
+                //  addToast('Data not saved', { appearance: 'error', autoDismiss: true });
+                console.log(error)
+            }
+            
         }else{
             addToast('Invalid Email', { appearance: 'error', autoDismiss: true });
         }

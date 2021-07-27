@@ -17,7 +17,7 @@ const Header = () => {
     <header className="header-global">
       <nav
         id="navbar-main"
-        className="navbar navbar-main navbar-theme-primary navbar-expand-lg headroom py-lg-3 px-lg-6 navbar-dark navbar-transparent navbar-theme-primary"
+        className="navbar navbar-main navbar-theme-primary navbar-expand-lg headroom py-lg-3 px-lg-6 navbar-dark navbar-transparent"
       >
         <div className="container">
           <a className="navbar-brand @@logo_classes" href="javascript:void();">
@@ -69,17 +69,17 @@ const Header = () => {
                   aria-expanded="false"
                   data-toggle="dropdown"
                 >
-                  <span className="nav-link-inner-text mr-1">Front pages</span>
+                  <span className="mr-1 nav-link-inner-text">Front pages</span>
                   <i className="fas fa-angle-down nav-link-arrow" />
                 </Link>
                 <div
-                  className="dropdown-menu dropdown-megamenu p-3 p-lg-4"
+                  className="p-3 dropdown-menu dropdown-megamenu p-lg-4"
                   aria-labelledby="mainPagesDropdown"
                 >
                   <div className="row">
                     <div className="col-6 col-lg-4">
-                      <h6 className="d-block mb-3 text-primary">Main pages</h6>
-                      <ul className="list-style-none mb-4">
+                      <h6 className="mb-3 d-block text-primary">Main pages</h6>
+                      <ul className="mb-4 list-style-none">
                         <li className="mb-2 megamenu-item">
                           <a className="megamenu-link" href="index.html">
                             Landing
@@ -117,7 +117,7 @@ const Header = () => {
                         </li>
                       </ul>
                       <h6 className="d-block text-primary">Legal</h6>
-                      <ul className="list-style-none mb-4">
+                      <ul className="mb-4 list-style-none">
                         <li className="mb-2 megamenu-item">
                           <a className="megamenu-link" href="legal.html">
                             Legal center
@@ -131,8 +131,8 @@ const Header = () => {
                       </ul>
                     </div>
                     <div className="col-6 col-lg-4">
-                      <h6 className="d-block mb-3 text-primary">Listing</h6>
-                      <ul className="list-style-none mb-4">
+                      <h6 className="mb-3 d-block text-primary">Listing</h6>
+                      <ul className="mb-4 list-style-none">
                         <li className="mb-2 megamenu-item">
                           <a className="megamenu-link" href="all-spaces.html">
                             All spaces
@@ -165,8 +165,8 @@ const Header = () => {
                           </a>
                         </li>
                       </ul>
-                      <h6 className="d-block mb-3 text-primary">Support</h6>
-                      <ul className="list-style-none mb-4">
+                      <h6 className="mb-3 d-block text-primary">Support</h6>
+                      <ul className="mb-4 list-style-none">
                         <li className="mb-2 megamenu-item">
                           <a className="megamenu-link" href="support.html">
                             Support center
@@ -181,8 +181,8 @@ const Header = () => {
                           </a>
                         </li>
                       </ul>
-                      <h6 className="d-block mb-3 text-primary">Blog</h6>
-                      <ul className="list-style-none mb-4">
+                      <h6 className="mb-3 d-block text-primary">Blog</h6>
+                      <ul className="mb-4 list-style-none">
                         <li className="mb-2 megamenu-item">
                           <a className="megamenu-link" href="blog.html">
                             Blog
@@ -196,8 +196,8 @@ const Header = () => {
                       </ul>
                     </div>
                     <div className="col-6 col-lg-4">
-                      <h6 className="d-block mb-3 text-primary">User</h6>
-                      <ul className="list-style-none mb-4">
+                      <h6 className="mb-3 d-block text-primary">User</h6>
+                      <ul className="mb-4 list-style-none">
                         <li className="mb-2 megamenu-item">
                           <a className="megamenu-link" href="sign-in.html">
                             Sign in
@@ -225,8 +225,8 @@ const Header = () => {
                           </a>
                         </li>
                       </ul>
-                      <h6 className="d-block mb-3 text-primary">Special</h6>
-                      <ul className="list-style-none mb-4">
+                      <h6 className="mb-3 d-block text-primary">Special</h6>
+                      <ul className="mb-4 list-style-none">
                         <li className="mb-2 megamenu-item">
                           <a className="megamenu-link" href="404.html">
                             404 Not Found
@@ -265,19 +265,19 @@ const Header = () => {
                   aria-expanded="false"
                   data-toggle="dropdown"
                 >
-                  <span className="nav-link-inner-text mr-1">Dashboard</span>{" "}
+                  <span className="mr-1 nav-link-inner-text">Dashboard</span>{" "}
                   <i className="fas fa-angle-down nav-link-arrow" />
                 </Link>
                 <div
-                  className="dropdown-menu dropdown-megamenu-sm p-3 p-lg-4"
+                  className="p-3 dropdown-menu dropdown-megamenu-sm p-lg-4"
                   aria-labelledby="dashboardPagesDropdown"
                 >
                   <div className="row">
                     <div className="col-6">
-                      <h6 className="d-block mb-3 text-primary">
+                      <h6 className="mb-3 d-block text-primary">
                         User dashboard
                       </h6>
-                      <ul className="list-style-none mb-4">
+                      <ul className="mb-4 list-style-none">
                         <li className="mb-2 megamenu-item">
                           <Link className="megamenu-link" to="/userdashboard">
                             My account
@@ -300,7 +300,7 @@ const Header = () => {
                           </a>
                         </li>
                       </ul>
-                      <h6 className="d-block mb-3 text-primary">Items</h6>
+                      <h6 className="mb-3 d-block text-primary">Items</h6>
                       <ul className="list-style-none">
                         <li className="mb-2 megamenu-item">
                           <a
@@ -321,8 +321,8 @@ const Header = () => {
                       </ul>
                     </div>
                     <div className="col-6">
-                      <h6 className="d-block mb-3 text-primary">Messaging</h6>
-                      <ul className="list-style-none mb-4">
+                      <h6 className="mb-3 d-block text-primary">Messaging</h6>
+                      <ul className="mb-4 list-style-none">
                         <li className="mb-2 megamenu-item">
                           <a
                             className="megamenu-link"
@@ -340,8 +340,8 @@ const Header = () => {
                           </a>
                         </li>
                       </ul>
-                      <h6 className="d-block mb-3 text-primary">Billing</h6>
-                      <ul className="list-style-none mb-4">
+                      <h6 className="mb-3 d-block text-primary">Billing</h6>
+                      <ul className="mb-4 list-style-none">
                         <li className="mb-2 megamenu-item">
                           <a
                             className="megamenu-link"
@@ -353,7 +353,7 @@ const Header = () => {
                         <li className="mb-2 megamenu-item">
                           <a
                             className="megamenu-link"
-                            href="dashboard/invoice.html"
+                            href="userdashboard/invoice"
                           >
                             Invoice
                           </a>
@@ -371,7 +371,7 @@ const Header = () => {
                   aria-expanded="false"
                   data-toggle="dropdown"
                 >
-                  <span className="nav-link-inner-text mr-1">Support</span>
+                  <span className="mr-1 nav-link-inner-text">Support</span>
                   <i className="fas fa-angle-down nav-link-arrow" />
                 </Link>
                 <div
@@ -383,7 +383,7 @@ const Header = () => {
                       <Link
                         to="https://themesberg.com/docs/spaces/getting-started/quick-start/"
                         target="_blank"
-                        className="list-group-item list-group-item-action d-flex align-items-center p-0 py-3 px-lg-4"
+                        className="p-0 py-3 list-group-item list-group-item-action d-flex align-items-center px-lg-4"
                       >
                         <span className="icon icon-md icon-secondary">
                           <i className="fas fa-file-alt" />
@@ -391,7 +391,7 @@ const Header = () => {
                         <div className="ml-4">
                           <span className="text-dark d-block">
                             Documentation
-                            <span className="badge badge-sm badge-secondary ml-2">
+                            <span className="ml-2 badge badge-sm badge-secondary">
                               v3.0
                             </span>
                           </span>
@@ -401,7 +401,7 @@ const Header = () => {
                       <Link
                         to="https://themesberg.com/contact"
                         target="_blank"
-                        className="list-group-item list-group-item-action d-flex align-items-center p-0 py-3 px-lg-4"
+                        className="p-0 py-3 list-group-item list-group-item-action d-flex align-items-center px-lg-4"
                       >
                         <span className="icon icon-md icon-primary">
                           <i className="fas fa-microphone-alt" />
@@ -418,8 +418,8 @@ const Header = () => {
             </ul>
           </div>
           {/* <div className="d-none d-lg-block @@cta_button_classes">
-                            <Link to="/adminpanel" className="btn btn-md btn-outline-white animate-up-2 mr-3">
-                                <i className="fas fa-book mr-1" />
+                            <Link to="/adminpanel" className="mr-3 btn btn-md btn-outline-white animate-up-2">
+                                <i className="mr-1 fas fa-book" />
                                 <span className="d-xl-none">Docs</span>
                                 <span className="d-none d-xl-inline">Admin</span>
                             </Link>
@@ -429,7 +429,7 @@ const Header = () => {
 
           {!context.isAuthenticated && (
             <Link to="/login" className="btn btn-md btn-secondary animate-up-2">
-              <i className="fas fa-shopping-bag mr-2" />
+              <i className="mr-2 fas fa-shopping-bag" />
               Login
             </Link>
           )}
@@ -437,9 +437,9 @@ const Header = () => {
             <div className="d-none d-lg-block @@cta_button_classes">
               <Link
                 to="/adminpanel"
-                className="btn btn-md btn-outline-white animate-up-2 mr-3"
+                className="mr-3 btn btn-md btn-outline-white animate-up-2"
               >
-                <i className="fas fa-book mr-1" />
+                <i className="mr-1 fas fa-book" />
                 <span className="d-xl-none">Docs</span>
                 <span className="d-none d-xl-inline">Admin</span>
               </Link>
@@ -454,7 +454,7 @@ const Header = () => {
                 onClick={logout}
                 className="btn btn-md btn-secondary animate-up-2"
               >
-                <i className="fas fa-shopping-bag mr-2" />
+                <i className="mr-2 fas fa-shopping-bag" />
                 Logout
               </button>
             </Fragment>

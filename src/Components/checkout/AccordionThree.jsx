@@ -9,10 +9,10 @@ const AccordionThree = ({ checkoutPageTwo, email, }) => {
     const [emailVerified, setemailVerified] = useState(false)
     const context = useContext(contextData)
     const { addToast } = useToasts();
-    console.log(context)
-    const code1=localStorage.getItem('code');
+    // const code1=localStorage.getItem('code');
     const acceptConditions = (e) => {
         console.log(code, emailCode)
+        console.log(emailCode)
         if (Number(code) === emailCode) {
             setemailVerified(true)
             checkoutPageTwo()
