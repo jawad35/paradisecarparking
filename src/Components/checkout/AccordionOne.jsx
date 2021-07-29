@@ -34,15 +34,15 @@ const AccordionOne = ({ checkoutPageTwo }) => {
             //         addToast(msgs.msg, { appearance: 'info', autoDismiss: true });
             //     });
             // }
-            try {
-                const res=await axios.post(`/api/formdata`,formData)
-                console.log(res)
-                checkoutPageTwo()
-            } catch (error) {
-                //  addToast('Data not saved', { appearance: 'error', autoDismiss: true });
-                console.log(error)
-            }
-            
+            // try {
+            //     const res=await axios.post(`/api/formdata`,formData)
+            //     console.log(res)
+                
+            // } catch (error) {
+            //     //  addToast('Data not saved', { appearance: 'error', autoDismiss: true });
+            //     console.log(error)
+            // }
+            checkoutPageTwo()
         }else{
             addToast('Invalid Email', { appearance: 'error', autoDismiss: true });
         }

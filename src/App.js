@@ -8,7 +8,8 @@ import Userpanel from "./Components/userPanel/Userpanel";
 import LoadingComponent from "./Loading Animation/Loading";
 import Inovice from "./Components/userPanel/userPanelMenus/Inovice";
 import MessengerCustomerChat from "react-messenger-customer-chat";
-
+import CreateBlog from "./Components/AdminPanel/AdminBlog/createblog/CreateBlog";
+import CreateCoupan from "./Components/AdminPanel/Coupen/createcoupan/CreateCoupan";
 const App = () => {
   useEffect(() => {
     runScripts();
@@ -21,7 +22,13 @@ const App = () => {
         <Route exact path="/login" component={Login} />
         <Route exact path="/" component={HomePage} />
         <Route exact path="/register" component={Register} />
+        {/* blog routes */}
+        <Route exact path="/getpost" component={HomePage} />
+        <Route exact path="/getpost/:id" component={HomePage} />
+        {/* blog routes end */}
         <AdminRoute exact path="/adminpanel" component={AdminPanel} />
+        <AdminRoute exact path="/coupancreate" component={CreateCoupan} />
+        <AdminRoute exact path="/createpost" component={CreateBlog} />
         <PrivateRoute exact path="/checkout" component={Checkout} />
         <PrivateRoute exact path="/userdashboard" component={Userpanel} />
         <PrivateRoute

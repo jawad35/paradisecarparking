@@ -1,6 +1,7 @@
 import React,{useState,useEffect,useContext} from 'react'
 import axios from 'axios'
 import {contextData} from '../../../context/CreateContext'
+import Header from '../../HomePage/Header'
 const Inovice = () => {
 	const [invoices, setInvoice] = useState([])
 	const context = useContext(contextData)
@@ -14,6 +15,7 @@ const Inovice = () => {
 	},[setInvoice,context.user.id])
     return (
     <div class="container mt-5">
+        <Header/>
     {
 		invoices.map((invoice)=>(<div class="d-flex justify-content-center row" key={Inovice._id}>
         <div class="col-md-8">

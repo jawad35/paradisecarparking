@@ -6,7 +6,7 @@ import Header from '../checkout/Header';
 import Dashboard from './Dashboard/Dashboard';
 import Bookings from './Bookings/Bookings';
 import AdminProfileList from "./AdminProfile/AdminProfile"
-
+import {Link} from 'react-router-dom'
 const AdminPanel = () => {
   const [bookings, setBookings] = useState(true);
   const [dashboard, setDashboard] = useState(false);
@@ -189,12 +189,12 @@ const AdminPanel = () => {
                       </a>
                     </li>
                     <li>
-                      <a href='apps-projects-add.html'>
-                        Create Project{' '}
+                      <Link to='/createpost'>
+                        Create Post{' '}
                         <span className='badge rounded-pill badge-success-lighten font-10 float-end'>
                           New
                         </span>
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -406,7 +406,7 @@ const AdminPanel = () => {
                 <div className='collapse' id='sidebarBaseUI'>
                   <ul className='side-nav-second-level'>
                     <li>
-                      <a href='ui-accordions.html'>Accordions</a>
+                      <Link to='/coupancreate'>Create Coupen Code</Link>
                     </li>
                     <li>
                       <a href='ui-alerts.html'>Alerts</a>

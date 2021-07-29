@@ -6,7 +6,7 @@ import { contextData } from "../../context/Provider";
 import { AdminPageScriptsRun } from "../AdminPanel/AdminScriptsRun";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-
+import axios from 'axios'
 import Header from "./Header";
 import { runScripts } from "./homePageScripts";
 import i18n from "../../i18n";
@@ -25,10 +25,12 @@ const HomePage = () => {
 
 
 
-  useEffect(() => {
+  useEffect(async() => {
     runScripts();
     AdminPageScriptsRun(false);
-  }, []);
+    // const res=await axios.get(`/api/getpost/${'6101585394c6b66891280832'}`)
+    // console.log(res)
+  }, [runScripts,AdminPageScriptsRun]);
 
   const changePlaceHandler = (e) => {
     setLocation(e.currentTarget.value)
